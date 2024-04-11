@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Crousel</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: aquamarine;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        height: 560px;
+        width: 500px;
+        overflow: hidden;
+    }
+
+    .image-container {
+        height: 500px;
+        width: 500px;
+        display: flex;
+        transition: 1s ease;
+    }
+
+    .image-container img {
+        border-radius: 10px;
+        transition: 1s ease;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .button-container button {
+        width: 49.5%;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        font-size: 1.2rem;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="https://picsum.photos/500/500/?random/1" alt="Random image">
+            <img src="https://picsum.photos/500/500/?random/10" alt="Random image">
+            <img src="https://picsum.photos/500/500/?random/20" alt="Random image">
+            <img src="https://picsum.photos/500/500/?random/30" alt="Random image">
+            <img src="https://picsum.photos/500/500/?random/40" alt="Random image">
+        </div>
+        <div class="button-container">
+            <button id="prev">Previous</button><button id="next">Next</button>
+        </div>
+    </div>
+    <script src="imageslide.js"></script>
+</body>
+
+</html>

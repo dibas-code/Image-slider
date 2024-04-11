@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        border: 1px solid black;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background-color: white;
+        width: 300px;
+        text-align: center;
+    }
+
+    .header {
+        padding: 20px;
+        background-color: blue;
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .display {
+        padding: 20px;
+        font-size: 2.5rem;
+    }
+
+    .buttons button {
+        border: none;
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .active {
+        background-color: red;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>StopWatch</h2>
+        </div>
+        <div class="display">
+            <h2 id="timer">
+                00:00:00
+            </h2>
+        </div>
+        <div class="buttons">
+            <button class="Start">Start</button>
+            <button class="Reset">Reset</button>
+        </div>
+    </div>
+    <script src="stopwatch.js"></script>
+</body>
+
+</html>
